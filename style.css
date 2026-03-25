@@ -85,6 +85,7 @@ section.allelems {
   position: absolute;
   padding: 40px;
 }
+
 .back{
     position: absolute;
     right: 5%;
@@ -98,4 +99,15 @@ section.allelems {
 }
 .back:active{
     scale: 0.95;
+}
+
+.todo-list-fullpages{
+  display: block;
+}
+.todo-list-fullpages h2{
+  font-size: 2.5rem;
+  
+}
+.list-container{
+  
 }
