@@ -4,6 +4,7 @@
 }
 @font-face {
   font-family: Light;
+  font-weight: 900;
   src: url(./assets/AeonikTRIAL-Light.otf);
 }
 @font-face {
@@ -11,17 +12,20 @@
   src: url(./assets/AeonikTRIAL-Bold.otf);
 }
 :root {
-  --pri: #9a752f;
-  --sec: #8e977d;
-  --tri1: #ece7d1;
-  --tri2: #c5b57f;
+  --pri: #ca9d4b;
+  --sec: #5a8f1a;
+  --tri1: #8d7b68;
+  --tri2: #9a8c5f;
+  --tri3: #322a0d;
+  --red: rgb(181, 0, 0);
+  --txt: #feffd3;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Normal;
-  color: var(--tri1);
+  color: var(--txt);
 }
 
 html,
@@ -33,7 +37,6 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--pri);
-  /* overflow-x: hidden; */
 }
 nav {
   position: fixed;
@@ -86,28 +89,120 @@ section.allelems {
   padding: 40px;
 }
 
-.back{
-    position: absolute;
-    right: 5%;
-    border: none;
-    background-color: rgba(238, 9, 9, 0.893);
-    border-radius: 20px;
-    font-size: 2rem;
-    font-weight: 900;
-    padding: 20px 25px;
-    transition: all ease 0.3s;
+.back {
+  position: absolute;
+  right: 4%;
+  border: none;
+  background-color: var(--red);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 15px 20px;
+  transition: all ease 0.3s;
 }
-.back:active{
-    scale: 0.95;
+.back:active {
+  scale: 0.95;
 }
 
-.todo-list-fullpages{
+.todo-list-fullpages {
   display: block;
 }
-.todo-list-fullpages h2{
-  font-size: 2.5rem;
-  
+.todo-list-fullpages h2 {
+  font-size: 3rem;
 }
-.list-container{
-  
+.todo-list-fullpages .list-container {
+  height: 80%;
+  width: 100%;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-list-fullpages .list-container .addtask {
+  height: 100%;
+  width: 35%;
+  background-color: var(--tri2);
+  border-radius: 20px;
+}
+.todo-list-fullpages .list-container .addtask form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+}
+.list-container .addtask form input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 2.7rem;
+  background-color: var(--tri3);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 16px;
+}
+.list-container .addtask form textarea {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 2rem;
+  background-color: var(--tri3);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 16px;
+  height: 500px;
+  resize: none;
+  overflow-y: auto;
+}
+.list-container .addtask form button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 2rem;
+  background-color: var(--sec);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 16px;
+  transition: all ease 0.3s;
+}
+.list-container .addtask form button:active {
+  scale: 0.96;
+}
+.todo-list-fullpages .list-container .alltask {
+  height: 100%;
+  width: 60%;
+  background-color: var(--tri2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  overflow: auto;
+}
+.tasks {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--tri3);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+.tasks h4 {
+  font-size: 2.5rem;
+  font-family: Light;
+  text-transform: capitalize;
+  color: var(--txt);
+}
+.tasks button {
+  padding: 10px 20px;
+  background-color: rgb(12, 182, 12);
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 8px;
+  transition: all ease 0.3s;
+  font-family: Bold;
+}
+.tasks button:active {
+  scale: 0.95;
 }

@@ -15,4 +15,13 @@ function openfeatures() {
     });
   });
 }
-openfeatures()
+openfeatures();
+
+let form = document.querySelector(".addtask form");
+let Input = document.querySelector(".addtask form input");
+let textarea = document.querySelector(".addtask form textarea");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+});
