@@ -14,7 +14,7 @@
   --pri: #9a752f;
   --sec: #8e977d;
   --tri1: #ece7d1;
-  --tri2: #dbcea5;
+  --tri2: #c5b57f;
 }
 * {
   margin: 0;
@@ -81,11 +81,9 @@ section.allelems {
   height: 100%;
   width: 100%;
   background-color: var(--pri);
-  font-size: 2.5rem;
   display: none;
   position: absolute;
   padding: 40px;
-  
 }
 .back{
     position: absolute;
