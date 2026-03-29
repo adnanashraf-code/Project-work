@@ -130,7 +130,7 @@ section.allelems {
   align-items: flex-start;
   padding: 32px;
 }
-.list-container .addtask form input {
+.list-container .addtask form input#tasks-input {
   width: 100%;
   padding: 10px 20px;
   font-size: 2.7rem;
@@ -149,9 +149,26 @@ section.allelems {
   outline: none;
   border-radius: 7px;
   margin-bottom: 16px;
-  height: 500px;
+  height: 450px;
   resize: none;
   overflow-y: auto;
+}
+.mark-imp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  gap: 25px;
+  text-transform: capitalize;
+}
+.mark-imp input {
+  scale: 3;
+}
+.mark-imp label {
+  font-size: 1.7rem;
+  font-family: Normal;
 }
 .list-container .addtask form button {
   width: 100%;
